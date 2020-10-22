@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Yusakha Is Here</title>
+    <link href="./css/main.css" rel="stylesheet" /><title>Public Health</title>
     </head>
+
     <body>
-        <p1>
-            Halo
-        </p1>
+        <div class="rectangle"></div>
+        <form>
+            <div class="topright">
+            <tr> 
+                <td><label for="Username"> Useranme:</label>
+                <input type="text" id="Username"></td>
+                <td><label for="Password"> Password:</label>
+                <input type="password" id="Password"></td>
+                <td><button formaction="Menu/Tobecontinued.html">LOGIN</button>
+                    </form> </td>
+            </tr>
+            </div>
+            <div class="signupbox">
+            <h1>Sign Up</h1>
+            <h2>It's free and always has been</h2>
+            <tr>
+                <td><label for="Fname"></label>
+                <input type="text" id="Fname" value="First Name"></td>
+                <td><label for="Lname"></label>
+                <input type="text" id="Lname" value="Last Name"></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><label for="Email"></label>
+                <input type="text" id="Email" value="Email"></td>
+                <br><br>
+                <td><label for="Passwordcreate">Password: </label>
+                <input type="password" id="Passwordcreate" value="password"></td>
+                <br><br>
+                <td><label for="Passwordcreatecnfrm">Confirm Password: </label>
+                <input type="password" id="Passwordcreatecnfrm" value="password"></td>
+            </tr>
+            <br>
+            <h1>Birth Day</h1>
+            <td><label for="DD"></label>
+            <input type="text" id="DD" value="DD"></td>
+            <td><label for="MM">/</label>
+            <input type="text" id="MM" value="MM"></td>
+            <td><label for="YYYY">/</label>
+            <input type="text" id="YYYY" value="YYYY"></td>
+            <br><br>
+            <tr>
+                <td><input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label></td>
+                <td><input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label></td>              
+            </tr>
+
+            <p>By clicking Sign Up, you agree to our <a href="/Menu/Tobecontinued.html">Terms</a> and that <br>
+            you have read our <a href="/Menu/Tobecontinued.html">Data Use Policy</a>,
+            including <a href="/Menu/Tobecontinued.html">Cookie Use.</a></p>
+
+            <br>
+            <h1><button formaction="Menu/Tobecontinued.html">SIGN UP</button></h1>
+            </div>
+        
+        </form>
+
     </body>
 </html>
