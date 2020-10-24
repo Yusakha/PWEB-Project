@@ -1,40 +1,66 @@
-
-body {
-    background-image: url(../images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}   
-
-.topright {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 18px;
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
+body {
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}   
+
 .topleft {
-    background-image: url(../images/Logo\ Med.pngs);
-    position: absolute;
-    top: 20px;
-    left: 20px;
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  z-index: 2;
+}
+
+.topleft2 {
+  position: absolute;
+  top: 18px;
+  left: 90px;
+  color: white;
+  z-index: 2;
+}
+
+.topright {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 18px;
+  color: white;
+  z-index: 2;
 }
 
 .rectangle {
-    top: 0px;
-    width: auto;
-    height: 50px;
-    background: #2b2d7b;
-    background-repeat: repeat-x;
-    background-size: cover;
+  position: relative ;
+  width: auto;    
+  height: 50px;
+  background: #2b2d7b;
+  background-repeat: repeat-x;
+  background-size: cover;
+  z-index: 1;
+}
+
+.forgotpassword{
+  position: absolute;
+  left: 120px;
+  font-size: 18px;
 }
 
 .signupbox{
-    position: absolute;
-    right: 30px;
-    font-size: 18px;
+  position: absolute;
+  right: 30px;
+  font-size: 18px;
 }
-
-
-
-
-
+.container {
+  background: white;
+  width: 610px;
+  height: 280px;
+  border-radius: 10px;
+  margin: 0 auto;
+  border-bottom: 1px black;
+  margin-top: 30px;
+  margin-left: 90px;
+}
