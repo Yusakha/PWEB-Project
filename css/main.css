@@ -51,8 +51,10 @@ body {
 
 .signupbox{
   position: absolute;
+  top: 100px; 
   right: 30px;
   font-size: 18px;
+  z-index: 2;
 }
 .container {
   background: white;
@@ -63,4 +65,15 @@ body {
   border-bottom: 1px black;
   margin-top: 30px;
   margin-left: 90px;
+}
+.containerSignUp {
+  background: white;
+  width: 590px;
+  height: 500px;
+  border-radius: 10px;
+  margin: 0 auto;
+  border-bottom: 1px black;
+  margin-top: 20px;
+  margin-right: 17px;
+  z-index: 1;
 }
