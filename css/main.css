@@ -77,3 +77,13 @@ body {
   margin-right: 17px;
   z-index: 1;
 }
+.containerindex {
+  background: white;
+  width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+  margin: 0 auto;
+  border-bottom: 1px black;
+  margin-top: 20px;
+  margin-right: 60px;
+  z-index: 1;
