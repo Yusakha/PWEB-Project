@@ -11,12 +11,9 @@
             </a> 
         </div>
         <div class="rectangle"></div>
-        <div class="tablesignup"></div>
-        <id="rcorners">
-        <form>
-            <div class="topright">
+        <div class="topright">
             <tr> 
-                <td><label for="Username"> Useranme:</label>
+                <td><label for="Username"> Username:</label>
                 <input type="text" id="Username"></td>
                 <td><label for="Password"> Password:</label>
                 <input type="password" id="Password"></td>
@@ -24,20 +21,31 @@
                     </form> </td>
             </tr>
             </div>
-            <div class="forgotpassword"><br>
+        <div class="forgotAlign">
             <h1>Forgot Password</h1><br>
-            <h2>Find Your Account</h2><br>
-            <tr>
-                <td><label for="Email"></label>
-                <input type="text" id="Email" placeholder="Email or Username"></td>
-            </tr><br><br>
-            <p>If you have any questions or you have another problems, you can visit <a href="Features/Complaint.html">here</a>. 
-            <form><tr><h1><button formaction="Menu/Tobecontinued.html">Find</button>
-                <button formaction="Menu/Tobecontinued.html">Cancel</button></h1>
-            </tr></form>
-            </div>
-        </form></id>
-        <div class="container"></div>
+            <form name="Forgot Password" action="">
+                <label for="First Name">First Name :</label><br>
+                <input type="First Name" placeholder="First Name" name="First Name"><br><br>
+                <label for="Last Name">Last Name :</label><br>
+                <input type="Last Name" placeholder="Last Name" name="Last Name"><br><br>
+                <label for="email">What's Your Email? :</label><br>
+                <input type="email" placeholder="Email" name="email"><br><br>
+                <label for="birth">Birthday :</label><br>
+                <td><label for="DD"></label>
+                <input type="text" id="DD" placeholder="DD"></td>
+                <td><label for="MM">/</label>
+                <input type="text" id="MM" placeholder="MM"></td>
+                <td><label for="YYYY">/</label>
+                <input type="text" id="YYYY" placeholder="YYYY"></td><br><br>
+                <label for="Sex">Sex :</label>
+                <select name="Sex" id="isi">
+                    <optgroup label="Sex">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                </select><br><br>
+                <td><button formaction="Menu/Tobecontinued.html">Submit</button>
+            </form></div>
+        </div><br>
         <div class="back"></div>
     </body>
 </html>
