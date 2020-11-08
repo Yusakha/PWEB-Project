@@ -59,12 +59,13 @@ body {
 .container {
   background: white;
   width: 610px;
-  height: 280px;
+  height: 350px;
   border-radius: 10px;
   margin: 0 auto;
   border-bottom: 1px black;
-  margin-top: 30px;
+  margin-top: -200px;
   margin-left: 90px;
+  z-index: 2
 }
 .containerSignUp {
   background: white;
@@ -88,4 +89,18 @@ body {
   margin-right: 60px;
   z-index: 1;
 }
-
+.forgotAlign{
+  border: 2px solid black;
+  background-color: white;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+}
+table,th,td{
+  border: 1px solid black;
+}
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
