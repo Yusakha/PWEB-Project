@@ -5,8 +5,10 @@
 
 body {
   background-image: url(../images/bg1.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
 }   
 
 .topleft {
@@ -34,13 +36,13 @@ body {
 }
 
 .rectangle {
-  position: relative ;
-  width: auto;    
+  position: fixed ;
+  width: 100%;    
   height: 50px;
   background: #2b2d7b;
   background-repeat: repeat-x;
   background-size: cover;
-  z-index: 1;
+  top: 0;
 }
 
 .forgotpassword{
@@ -50,11 +52,8 @@ body {
 }
 
 .signupbox{
-  position: absolute;
-  top: 100px; 
-  right: 30px;
+  padding: 20px;
   font-size: 18px;
-  z-index: 2;
 }
 .container {
   background: white;
@@ -72,8 +71,8 @@ body {
   height: 500px;
   border-radius: 10px;
   margin: 0 auto;
+  margin-top: 50px;
   border-bottom: 1px black;
-  margin-top: 20px;
   margin-right: 17px;
   z-index: 1;
 }
