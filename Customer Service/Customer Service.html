@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Customer Service</title>
-    </head>
-    <body>
-        <form>
-            <tr>
+
+<head>
+    <title>Customer Service</title>
+</head>
+
+<body>
+    <form id="backtop">
+        <tr>
             <td>
-                <button formaction="Features/Complaint.html">Complaint Form</button>
+                <button formaction="#Complaint">Complaint Form</button>
             </td>
             <td>
-                <button formaction="Features/Testimonial(kesan pesan).html">Testimonial</button>
+                <button formaction="#Testimonial">Testimonial</button>
             </td>
             <td>
-                <button formaction="Features/Suggestion.html">Suggestion For Us</button>
+                <button formaction="#Suggest">Suggestion For Us</button>
             </td>
             <td>
-                <button formaction="Features/Review.html">Review Our Web</button>
+                <button formaction="#Review">Review Our Web</button>
             </td>
-            </tr>
-        </form>
-    </body>
+        </tr>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <form id="Complaint">
+        <h1>Complaint</h1>
+        <textarea name="Complaint" id="Complaint">What Your Complaint?</textarea>
+        <br>
+        <button formaction="./Submitted.html">Submit</button>
+        <a href="#backtop">Back to top</a>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <form id="Testimonial">
+        <h1>Testimonial</h1>
+        <textarea name="Testimonial" id="Testimonial">Write Us Your Testimonial</textarea>
+        <br>
+        <button formaction="./Submitted.html">Submit</button>
+        <a href="#backtop">Back to top</a>
+    </form>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <form id="Suggest">
+        <h1>Suggestion For Us</h1>
+        <textarea name="Suggestion" id="Suggestion">Write Us Your Suggestion For Our Website</textarea>
+        <br>
+        <button formaction="./Submitted.html">Submit</button>
+        <a href="#backtop">Back to top</a>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <form id="Review">
+        <h1>Review Our Web</h1>
+        <textarea name="Review" id="Review">Write Us Your Review</textarea>
+        <br>
+        <button formaction="./Submitted.html">Submit</button>
+        <a href="#backtop">Back to top</a>
+    </form>
+    
+
+</body>
+
 </html>

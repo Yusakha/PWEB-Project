@@ -46,8 +46,8 @@ body {
 }
 
 .forgotpassword{
+  margin-top: 25px;
   position: absolute;
-  left: 120px;
   font-size: 18px;
 }
 
