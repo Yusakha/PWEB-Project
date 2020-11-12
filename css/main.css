@@ -34,9 +34,17 @@ body {
   z-index: 2;
 }
 
-.topright {
+.search {
   position: absolute;
   top: 25% ;
+  right: 20px;
+  font-size: 18px;
+  color: white;
+  z-index: 2;
+}
+.topright {
+  position: absolute;
+  top: 0%;
   right: 20px;
   font-size: 18px;
   color: white;
