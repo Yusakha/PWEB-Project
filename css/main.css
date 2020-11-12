@@ -101,6 +101,8 @@ body {
   width: 279px;
   height: 217px;
   background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .indexButton {
@@ -177,6 +179,13 @@ body {
   margin: 80px auto;
   padding: 30px;
   width: 50%;
+}
+.fitButton {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .fitImg {
   max-width: 100%;
