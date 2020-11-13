@@ -13,65 +13,88 @@
                     <img src="../images/logos.png" alt="Logo" style="width:23%">
                 </a>
             </div>
-            <div class="containerForgot"></div>
-    <form id="backtop">
+            <form>
+                <div class="search">
+                    <table>
+                        <tr>
+                            <td><label for="Search"></label>
+                                <input style="height: 20px;" type="text" id="Search" placeholder="Search..."></td>
+                            <td><button class="buttonGo" formaction="Customer Service.html">Go</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="containerComplaint">
+    <form>
+        <div class="flex">
         <tr>
-            <td>
-                <button formaction="#Complaint">Complaint Form</button>
+            <td id="Complaint">
+                <button class="button1" formaction="#Complaint">Complaint Form</button>
             </td>
-            <td>
-                <button formaction="#Testimonial">Testimonial</button>
+            <td id="Testimonial">
+                <button class="button1" formaction="#Testimonial">Testimonial</button>
             </td>
-            <td>
-                <button formaction="#Suggest">Suggestion For Us</button>
+            <td id="Suggest">
+                <button class="button1" ormaction="#Suggest">Suggestion For Us</button>
             </td>
-            <td>
-                <button formaction="#Review">Review Our Web</button>
+            <td id="Review">
+                <button class="button1" formaction="#Review">Review Our Web</button>
             </td>
         </tr>
+        </div>
+    </div>
     </form>
-    <br><br><br><br><br><br><br><br><br><br>
-
+    <br><br>
+    <div class="containerForgot" style="margin: 120px auto;">
     <form id="Complaint">
-        <h1>Complaint</h1>
-        <textarea name="Complaint" id="Complaint">What Your Complaint?</textarea>
-        <br>
-        <button formaction="./Submitted.html">Submit</button>
-        <a href="#backtop">Back to top</a>
+        <h1>Complaint</h1><br>
+        <textarea name="Complaint" id="Complaint" placeholder="What Your Complaint?"></textarea>
+        <br><br>
+        <button class="buttonForm" formaction="./Submitted.html">Submit</button>
+        <a href="#Complaint">Back to top</a>
     </form>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
 
     <form id="Testimonial">
-        <h1>Testimonial</h1>
+        <h1>Testimonial</h1><br>
         <textarea name="Testimonial" id="Testimonial">Write Us Your Testimonial</textarea>
-        <br>
-        <button formaction="./Submitted.html">Submit</button>
-        <a href="#backtop">Back to top</a>
+        <br><br>
+        <button class="buttonForm" formaction="./Submitted.html">Submit</button>
+        <a href="#Testimonial">Back to top</a>
     </form>
 
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
 
     <form id="Suggest">
-        <h1>Suggestion For Us</h1>
+        <h1>Suggestion For Us</h1><br>
         <textarea name="Suggestion" id="Suggestion">Write Us Your Suggestion For Our Website</textarea>
-        <br>
-        <button formaction="./Submitted.html">Submit</button>
-        <a href="#backtop">Back to top</a>
+        <br><br>
+        <button class="buttonForm" formaction="./Submitted.html">Submit</button>
+        <a href="#Suggest">Back to top</a>
     </form>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
 
     <form id="Review">
-        <h1>Review Our Web</h1>
+        <h1>Review Our Web</h1><br>
         <textarea name="Review" id="Review">Write Us Your Review</textarea>
-        <br>
-        <button formaction="./Submitted.html">Submit</button>
-        <a href="#backtop">Back to top</a>
+        <br><br>
+        <button class="buttonForm" formaction="./Submitted.html">Submit</button>
+        <a href="#Review">Back to top</a>
     </form>
     </div>
-
+</div>
 </body>
 
 </html>
