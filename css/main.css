@@ -64,6 +64,13 @@ body {
   color: white;
 }
 
+.button1 {
+  background-color: blue;
+  padding: 13px;
+  width: 120px;
+  color: white;
+}
+
 .buttonForm {
   background-color: gray;
   padding: 13px;
@@ -108,6 +115,17 @@ body {
   z-index: 2;
 }
 
+.containerComplaint {
+  position: fixed ;
+  width: 100%;    
+  height: 60px;
+  background: black;
+  opacity: 70%;
+  background-repeat: repeat-x;
+  background-size: cover;
+  margin-top: 60px;
+  z-index: 3;
+}
 .indexMenu {
   position: absolute;
   display: flex;
@@ -233,7 +251,16 @@ body {
   opacity: 100%;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
 .row {
   margin-left:-5px;
   margin-right:-5px;
+}
+textarea {
+  height: 100px;
+  width: 500px;
 }
