@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title> Public Health </title>
-</head>
-
+    <head>
+        <title>Public Health</title>
+        <link href="../css/main.css" rel="stylesheet" />
+    </head>
+    <body class="bodyIndex">
+        <div class="rectangle">
+        <div class="topleft2">Public Health</div>
+        <div class="topleft">
+            <a href="../index.html">
+                <img src="../images/logos.png" alt="Logo" style="width:23%">
+            </a>
+        </div>
 <body>
-    <!-- Container bagian kiri -->
     <table>
-        <tr>
-            <th><img src="../images/userimage.png" alt="usr image" width="5%"></th>
+        <tr class="topright">
+            <th style="height: 60px;background-color: white;"><img src="../images/guest img.png" alt="usr image" class="fitImg"></th>
             <th>Guest</th>
-            <th>
+            <th style="height: 60px;">
                 <a href="./Usersetings.html">
-                    <img src="../images/settings.png" alt="Settings" width="50%">
+                    <img src="../images/settings.png" alt="Settings" class="fitImg">
                 </a>
             </th>
             <th> <a href="./Usersetings.html">Settings</a></th>
         </tr>
     </table>
     <!-- Container tengah -->
+<div class="containerTimeline">
     <table>
         <tr>
             <td>
@@ -84,15 +91,14 @@
                 
             </td>
         </tr>
-        <tr>
-            <td> <a href="./Quiz.html">Attempt Quiz Now</a></td>
-        </tr>
     </table>
 
     <!-- Container Kanan -->
     <form>
-        <table>
+        <table style="margin: auto;text-align: center;">
             <tr>
+                <td> <a href="./Quiz.html">Attempt Quiz Now</a></td></tr>
+                <tr>
                 <td><label for="Search"></label>
                     <input type="text" id="Search" placeholder="Search..."></td>
                 <td><button formaction="Tobecontinued.html">Go</button>
@@ -100,6 +106,7 @@
             </tr>
         </table>
     </form>
+</div>
 </body>
 
 </html>
