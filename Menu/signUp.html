@@ -27,13 +27,13 @@
                 </form>
             </div>
         <div class="containerSignUp">
-            <div class="signupbox">
-                <form>
+            <div class="signupbox" method="post">
+                <form name="signUp" id="formsign" onsubmit="return submit()" >
                     <h1>Sign Up</h1>
                     <h2>It's free and always has been</h2>
                     <tr>
                         <td><label for="Fname"></label>
-                            <input class="paddingText" type="text" id="Fname" placeholder="First Name"></td>
+                            <input class="paddingText" type="text" id="Fname"  placeholder="First Name"></td>
                         <td><label for="Lname"></label>
                             <input class="paddingText" type="text" id="Lname" placeholder="Last Name"></td>
                     </tr>
@@ -51,21 +51,62 @@
                     <br>
                     <h1>Birth Day</h1>
                     <td><label for="DD"></label>
-                        <input class="widthBirthday" type="text" id="DD" placeholder="DD"></td>
+                        <input class="widthBirthday" type="text" id="Day" placeholder="DD"></td>
                     <td><label for="MM">/</label>
-                        <input class="widthBirthday" type="text" id="MM" placeholder="MM"></td>
+                        <input class="widthBirthday" type="text" id="Month" placeholder="MM"></td>
                     <td><label for="YYYY">/</label>
-                        <input class="widthBirthday" type="text" id="YYYY" placeholder="YYYY"></td>
+                        <input class="widthBirthday" type="text" id="Year" placeholder="YYYY"></td>
                     <br><br>
-                    <tr>
-                        <td><input type="radio" id="male" name="gender" value="male">
+                    <tr>Gender :
+                        <td><input type="radio" name="Gender" id="Gender" value="male">
                             <label for="male">Male</label></td>
-                        <td><input type="radio" id="female" name="gender" value="female">
+                        <td><input type="radio" name="Gender" id="Gender" value="female">
                             <label for="female">Female</label></td>
                     </tr>
-                    <h1><button class="buttonForm" formaction="SubmittedSignup.html">SIGN UP</button></h1>
+                    <h1><button type="submit" value="submit" class="buttonForm" >SIGN UP</button></h1>
                 </form>
             </div>
         </div>
+        <script>
+            document.getElementById("formsign").onsubmit = function() {sub()};
+
+            function sub() {
+                valid = validation()
+                if(valid == true){
+                    alert("The form was submitted");
+                    document.getElementById("formsign").action = "./SubmittedSignup.html";
+                }
+            }
+            function validation(){
+            let inputFname = document.querySelector('#Fname')
+            let inputLname = document.querySelector('#Lname')
+            let inputEmail = document.querySelector('#Email')
+            let inputPassword = document.querySelector('#Passwordcreate')
+            let inputPcnfrm = document.querySelector('#Passwordcreatecnfrm')
+            let inputDay = document.querySelector('#Day')
+            let inputMonth = document.querySelector('#Month')
+            let inputYear = document.querySelector('#Year')
+            let inputGender = document.getElementById("Gender").checked
+
+            if(inputFname.value.length == 0 || inputFname.value.length == 0 || inputEmail.value.length == 0 || inputPassword.value.length == 0 || inputPcnfrm.value.length == 0 || inputDay.value.length == 0 || inputMonth.value.length == 0 || inputYear.value.length == 0){
+                alert('Data cannot be empty')
+                return false
+            }if(inputDay.value.length < 1 || inputDay.value.length > 2 || inputMonth.value.length < 1 || inputMonth.value.length > 2 || inputYear.value.length < 1 || inputYear.value.length > 4){
+                alert('Enter date name correctly')
+                return false
+            }if(inputPassword.value != inputPcnfrm.value){
+                alert('Password incorrect!')
+                return false
+            }if(inputGender == false){
+                alert('Gender incorrect!')
+                return false
+            }if(inputEmail.value.indexOf("@") == -1){
+                alert("Not a valid e-mail!")
+                return false
+            }else{
+                return true
+            }
+            }
+        </script>
     </body>
 </html>

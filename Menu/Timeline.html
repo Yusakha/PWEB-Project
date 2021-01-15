@@ -95,21 +95,21 @@
                 </td>
             </tr>
         </table>
-
-        <!-- Container Kanan -->
-        <form>
+        <br>
+        <form name="quiz" id="quiz" onclick="return submit()">
             <table style="margin: auto;text-align: center;">
-                <tr>
-                    <td> <a href="./Quiz.html">Attempt Quiz Now</a></td></tr>
-                    <tr>
-                    <td><label for="Search"></label>
-                        <input type="text" id="Search" placeholder="Search..."></td>
-                    <td><button formaction="Tobecontinued.html">Go</button>
-                    </td>
-                </tr>
+                <td><button id="submmit" name="submit" type="submit" value="submit" class="buttonLogin" >Attempt Quiz Now</button></td>
             </table>
         </form>
     </div>
+    <script>
+        document.getElementById("quiz").onsubmit = function() {sub()};
+    
+        function sub() {
+            test = confirm("Are You Sure?")
+            if (test == true){
+            document.getElementById("quiz").action = "./Quiz.html"}
+        }
+    </script>
     </body>
-
 </html>

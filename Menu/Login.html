@@ -26,19 +26,39 @@
         </div>
     <body>
         <div class="containerForgot">
-        <form>
-            <tr>
-                <td>
+        <form name="login" id="login" onsubmit="return submit()">
+            <tr><td>
                     <label for="Username"> Username:</label>
-                    <input type="text" id="Username"></td><br><br>
+                    <input type="text" name="username" id="username"></td><br><br>
                     <td><label for="Password"> Password :</label>
-                    <input type="password" id="Password"></td><br><br>
-                    <td><button class="buttonLogin" formaction="LoginSuccess.html">Login</button></td>
+                    <input type="password" name="password" id="password"></td><br><br>
+                    <td><button type="submit" value="submit" class="buttonLogin" >Submit</button></td>
                     <td><button class="buttonLogin" formaction="../forgot.html">Forgot Password?</button></td>
-                </td>
-            </tr> 
+            </td></tr>  
         </form>
     </div>
 </div>
+<script>
+    document.getElementById("login").onsubmit = function() {sub()};
+
+    function sub() {
+        valid = validation()
+        if(valid == true){
+            alert("The form was submitted");
+            document.getElementById("login").action = "./LoginSuccess.html";
+        }
+    }
+    function validation(){
+    let username = document.querySelector('#username')
+    let password = document.querySelector('#password')
+
+    if(username.value.length == 0 || password.value.length == 0){
+        alert('Data cannot be empty')
+        return false
+    }else{
+        return true
+    }
+    }
+</script>
     </body>
 </html>
